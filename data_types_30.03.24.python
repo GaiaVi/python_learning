@@ -1,0 +1,180 @@
+#integer
+x =14
+print(x) #prints the data
+print(type(x)) #print what type it is
+# prints what is x and what data type x is .in this case its integer
+
+x1 = -1
+print(type(x1))
+
+# Floats
+nearly_pi = 3.14
+print(nearly_pi)
+print(type(nearly_pi))
+# prints what nearly_pi is and what type it is. in this case its a float
+
+nearly_pi1=22/7
+print(nearly_pi1)
+print(type(nearly_pi1))
+#prints the answer to nearly_pi and what type it is. in this case its a float
+
+#rounding float
+rounded_nearly_pi1 = round(nearly_pi1)
+print(rounded_nearly_pi1)
+print(type(rounded_nearly_pi1))
+# rounds the pi to 3 and prints what type the rounded pi is. in this case its integer
+
+rounded_nearly_pi1 = round(nearly_pi1, 2)
+print(rounded_nearly_pi1)
+print(type(rounded_nearly_pi1))
+# prints what pi is with two numbers that come after the comma
+
+type(round(nearly_pi)) #default is 0 defines what data type it is. in this case its integer
+
+type(round(nearly_pi1, 0)) #i actualy entered zero. prints what data type it is, in this case its a float
+
+#BOOLEANS
+boolean1 = False
+print(boolean1)
+print(type(boolean1))
+# prints what boolean1 is and what type it is. in this case its bool
+
+boolean2 = (1 < 2)
+print(boolean2)
+print(type(boolean2))
+# prints out true cause 1 is smaller than 2 and that the type is bool
+
+boolean3 = (5<3)
+print(boolean3)
+#prints out FALSE because 5 is not smaller than 3
+
+boolean4 = not boolean3
+print(boolean4)
+# prints out TRUE 
+
+# TRUE == 1
+# FALSE == 0
+
+boolean5 = True + False
+print(boolean5)
+#prints out TRUE because 1+0=1 think of binary
+
+# string
+string1 = "Hello!"
+print(string1)
+print(type(string1))
+#prints out string1 and what type string1 is. in this case its STR
+
+len(string1)
+types out 6 
+# types out how many numbers of elements is in the sequence(string1)
+
+nearly_pi_string = "3.14"
+type(nearly_pi_string)
+#types out the type. in this case its string
+
+nearly_pi_converted = float(nearly_pi_string)
+type(nearly_pi_converted)
+# types out the type. in this case its float
+
+new_string = "abc" + "def"
+print(new_string)
+#prints out abcdef
+
+# ADDITION
+a = 5
+b = 3
+sum = a + b
+print(f'sum: {sum}')
+#prints out 8 because is summarizes 5 and 3
+
+#SUBSTRACTION
+
+difference = a - b
+print(f'Difference: {difference}' )
+#prints out 2 because it substracts 3 from 5
+
+#MULTIPLICATION
+
+multip = a * b
+print(f"Multiplication: {multip}" )
+#prints out 15 because it multiplies 5 and 3
+
+#division
+
+div = a / b
+print(div)
+# prints out 1.6666666666666667 because it divides 5 from 3
+
+#Expo
+
+power = a ** b
+print(power)
+# prints out 125 
+
+#concatenation
+
+input1 = input("How old are you?") #String value
+input2 = input("How old am I? ")
+
+input1_int = int(input1)
+input2_int = int(input2)
+
+sum = input1_int + input2_int
+print(sum)
+# asks you to input your and my age and then summarizes them
+
+### density of an area
+area = input("Enter area: ")
+population = input("Enter population: ")
+
+area_int = int(area)
+population_int = int(population)
+
+density = population_int / area_int
+print(f'Averange density is: {density}')
+#asks you to enter area and population value and then divides them to get the density
+
+### converting pounds to kg
+
+# 1 pound = 0.453592 kilograms
+
+pounds = input("Enter the weight in pounds: ")
+
+pounds_float = float(pounds)
+conversion_factor = 0.453592 #constant variable
+
+kilograms = round(pounds_float * conversion_factor,3)
+
+print(f'Weight in pounds was: {pounds} lb \nWeight in kilograms was: {kilograms}kg')
+#asks you to enter the weight in pounds and then gives you the answer in kgs using the formula
+
+## transform celsius into farenheit
+#fahrenheit = (Celsius * 9/5) + 32
+celsius = float(input("Enter the temperature in celsius: "))
+fahrenheit = (celsius * 9/5) + 32
+print("Temperature in Fahrenheit:", fahrenheit)
+#asks you to enter the temp in celsius then gives you the answer in farenheit using the formula
+
+## transform miles to kilometres
+#1m = 1.6km
+miles = input("Enter the distance in miles: ")
+miles_float = float(miles)
+conversion_factor = 1.6
+kilometres = round (miles_float*conversion_factor, 3)
+print(f'{miles} miles = {kilometres} km')
+#asks you to enter the distance in miles then gives you the answer in miles with three numbers after the comma using the formula 
+
+### CALCULATE BODY MASS INDEX
+##[BMI = \frac{weight (kg)}{height (m)^2}]
+##bmi = weight / (height **2)
+def calculate_bmi(weight, height): return weight / (height ** 2)
+
+weight = float(input("Enter your weight in kg: "))
+height = float(input("Enter your height in m: "))
+
+BMI = round(weight_float / height_float**2, 4)
+print(f'BMI IS: {BMI}')
+#asks you to enter you weight in kg and height in m and then gives your bmi using the given formula
+
+
