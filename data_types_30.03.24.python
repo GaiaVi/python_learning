@@ -1,3 +1,4 @@
+```python
 #integer
 x =14
 print(x) #prints the data
@@ -177,4 +178,4 @@ BMI = round(weight_float / height_float**2, 4)
 print(f'BMI IS: {BMI}')
 #asks you to enter you weight in kg and height in m and then gives your bmi using the given formula
 
-
+```
